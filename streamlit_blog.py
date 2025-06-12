@@ -1,5 +1,4 @@
 import streamlit as st
-import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
@@ -10,7 +9,7 @@ st.image('KakaoTalk_20250605_011230439.jpg', caption='서울토박이의 숨은 
 st.markdown('#### BGM이 빠질 순 없지.')
 st.audio('good-night-lofi-cozy-chill-music-160166.mp3')
 st.divider()
-st.subheader('맛집 장소 한눈에 보기')
+st.subheader(':blue[맛집 장소 한눈에 보기]')
 st.write('📍서촌  /  문래  /  까치산역')
 
 locations = {
@@ -30,7 +29,7 @@ st.divider()
 # 토속촌
 st.write('')
 st.write('')
-st.header('1. 서촌 토속촌 삼계탕🐔')
+st.header(':green[1. 서촌 토속촌 삼계탕]🐔')
 st.image('KakaoTalk_20250605_022714010.jpg', caption='국물의 깊이에 우리네 인생이 담겼다.', width=500)
 
 st.write("""
@@ -39,11 +38,11 @@ st.write("""
     초등학교 시절, 할아버지의 손에 이끌려 자주 갔던 그 때의 향수를 불러일으키는 의미있는 장소입니다.
     녹진하게 우려진 삼계탕 국물은 목에 코팅이 되는 느낌이 들 정도로 그 맛이 깊으며, 잘 삶아진 닭고기는 젓가락으로 살짝 건드리기만 해도 바로 발라집니다. 
          
-    기말고사가 끝나가고 여름이 다가오는 지금, 힐링이 필요한 분들에게 보양식으로 제격입니다.
+    기말고사가 끝나가고 여름이 다가오는 지금, 힐링이 필요한 분들에게 **보양식**으로 제격입니다.
 """)
 st.write('')
 st.write('')
-st.write('''### 대표 메뉴 
+st.write('''### :blue[대표 메뉴] 
          토속촌 삼계탕       20,000원
     옻계탕             20,000원
     오골계 삼계탕       25,000원
@@ -78,7 +77,7 @@ st.divider()
 
 
 # 인왕산 유원지
-st.header('2. 서촌 인왕산 대충유원지☕')
+st.header(':green[2. 서촌 인왕산 대충유원지]☕')
 st.image('KakaoTalk_20250605_023452749_06.jpg', caption='요즘 말로 분좋카-!', width=500)
 st.write("""
     **인왕산 대충유원지**는 서촌의 고즈넉한 분위기와 어울리는 감각적인 인테리어의 카페입니다.
@@ -94,11 +93,11 @@ st.write('#### #사진 맛집')
 col1, col2= st.columns(2) # 3개의 칼럼 생성
 col1.image('KakaoTalk_20250605_023452749.jpg', width=300)
 col2.image('KakaoTalk_20250605_023452749_02.jpg', width=300)
-st.write("""카페에서 사진 찍기 좋아하는 분들은, 저녁에 가는 것을 추천드립니다.  
+st.write("""카페에서 사진 찍기 좋아하는 분들은, **저녁**에 가는 것을 추천드립니다.  
          해가 지고나서의 카페 분위기는 마치 와인바같습니다.  
          은은한 조명과 차분한 음악이 마치 여유로운 예술가가 된 것 같은 느낌을 줍니다.\n\n서촌에
-         특별한 애정이 있는 이유는 바로 이 고즈넉함입니다. 멀리 보이는 인왕산과 여유로운 사람들, 미적으로 세련되고 정돈되어있는 건물들.
-         사랑하지 않을 수 없습니다. 
+         특별한 애정이 있는 이유는 바로 이 **고즈넉함**입니다. 멀리 보이는 인왕산과 여유로운 사람들, 미적으로 세련되고 정돈되어있는 건물들.
+         :orange[**사랑하지 않을 수 없습니다.**] 
          """)
 
 st.write('')
@@ -108,13 +107,13 @@ video_file = open('KakaoTalk_20250612_130422742.mp4', 'rb')
 video_bytes = video_file.read()
 st.video(video_bytes)
 st.write("""
-         일본의 유명한 브륄레 아이스크림이 생각났던 달달하고 부드러운 브륄레.  
-         (양이 적어 아쉬웠습니다...)""")
+         :gray[일본의 유명한 브륄레 아이스크림이 생각났던 달달하고 부드러운 브륄레.  
+         (양이 적어 아쉬웠습니다...)]""")
 st.write('')
 st.write('')
 st.write('')
 st.write('')
-st.write('### 메뉴 평점')
+st.write('### :blue[메뉴 평점]')
 col1, col2, col3 = st.columns(3) 
 col1.metric('버터스카치 브륄레', '★★★★★', '한 바가지로 먹고싶은 맛')
 col2.metric('필터커피', '☆★★★★', '산미있는 커피의 정석')
@@ -128,7 +127,7 @@ st.divider()
 
 
 # 문래의 레트로문래
-st.header('3. 문래 레트로스펙터🍸')
+st.header(':green[3. 문래 레트로스펙터]🍸')
 st.image('KakaoTalk_20250612_120707608_01.jpg', caption='느좋바, 레트로스펙터', width=500)
 
 st.write("""
@@ -153,7 +152,7 @@ st.write('')
 st.write('')
 st.write('')
 st.write('')
-st.write('### 메뉴 평점')
+st.write('### :blue[메뉴 평점]')
 col1, col2, col3 = st.columns(3) 
 col1.metric('레몬 바질 콜드 파스타', '★★★★★', '1년동안 생각나는 맛')
 col2.metric('크림치즈와 크래커', '★★★★★', '클래식한데 새로운 맛')
@@ -170,7 +169,7 @@ st.divider()
 
 
 # 까치산 심원생고기
-st.header('4. 까치산 심원생고기🥩')
+st.header(':green[4. 까치산 심원생고기]🥩')
 st.image('KakaoTalk_20250612_134543721.jpg', caption='살살 녹는 소갈비살, 넘치는 반찬', width=500)
 st.write('')
 st.write("""
@@ -191,7 +190,7 @@ st.write("""고기는 언제 옳지만, 심원생고기의 **소갈비살**은 �
          입에 넣자마자 살살 녹으며 기분 좋은 포만감을 줍니다. **목살**도 이에 뒤지지 않습니다.  
          목살은 저렴한 부위, 저렴한 맛이라는 저의 편견을 깨부신 심원생고기의 목살은 저의 최애 부위입니다.\n\n""",
 
-         """또한 고기는 구워먹는 음식이므로, 굽는 사람의 스킬에 따라 맛이 달라질 수 있습니다. 
+         """또한 고기는 구워먹는 음식이므로, **굽는 사람의 스킬**에 따라 맛이 달라질 수 있습니다. 
          너무 타지않을 정도로 고르게 고기를 굽는 것이 핵심입니다.""")
 st.write('')
 st.success("""고기의 양 너무 푸짐해서, 한 사람은 굽느라 바빠 많이 못 먹을 수도도 있어요!  
@@ -201,7 +200,7 @@ st.write('')
 st.write('')
 st.write('')
 st.write('')
-st.write('#### 메뉴 평점')
+st.write('### :blue[메뉴 평점]')
 col1, col2, col3 = st.columns(3) 
 col1.metric('소갈비살', '★★★★★', '-너무 맛있어서 짜증남')
 col2.metric('목살', '★★★★★', '목살은 이제부터 고급부위')
@@ -242,10 +241,10 @@ st.write('')
 st.write('')
 st.write('')
 
-st.header(':orange[맺으며]')
-st.markdown("""
-    제가 사랑하는 서울의 맛집 4곳을 소개해보았는데요,   
-    날씨가 맑고 나들이 나가기 더없이 좋은 요즘, 더 북적여지기 전에 꼭 방문해보세요!
+st.header(':green[맺으며]')
+st.markdown(""":green[
+    제가 사랑하는 **서울의 맛집 4곳**을 소개해보았는데요,   
+    날씨가 맑고 나들이 나가기 더없이 좋은 요즘, 더 북적여지기 전에 꼭 방문해보세요!]
 """)
 
 st.write('')
@@ -264,24 +263,3 @@ st.write("""
     4. [까치산 - 심원생고기](https://naver.me/GyY2nMbb)
 """)
 st.write('')
-st.write('')
-st.write('')
-st.write('')
-st.write('')
-st.write('### 번외')
-import matplotlib.pyplot as plt
-from matplotlib import font_manager, rc
-
-font_path = "C:/Windows/Fonts/malgun.ttf"
-font_name = font_manager.FontProperties(fname=font_path).get_name()
-rc('font', family=font_name)
-
-menus = ['토속촌', '인왕산..', '레트로..', '심원..']
-sales = [95, 90, 100, 95]
-
-fig, ax = plt.subplots(figsize=(4,3))
-ax.bar(menus, sales, color='skyblue')
-ax.set_title('맛집별 내맘대로 리뷰 점수',fontsize=9)
-ax.set_ylabel('만족도')
-
-st.pyplot(fig)
