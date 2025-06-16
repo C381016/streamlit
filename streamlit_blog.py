@@ -225,7 +225,7 @@ st.write('')
 st.write('')
 
 st.divider()
-# 결론
+# 평점 총정리
 st.write('### 평점 총정리')
 import pandas as pd
 
@@ -238,10 +238,36 @@ df = pd.DataFrame({
 df
 st.write('')
 st.write('')
+
+
+df = pd.DataFrame({
+    '맛집': ['토속촌 삼계탕', '인왕산 대충유원지', '레트로스펙터', '심원생고기'],
+    '평점': [4.5, 4.5, 5, 4.5]
+})
+
+
+import matplotlib.pyplot as plt
+plt.rcParams['font.family'] = 'Malgun Gothic'
+
+st.subheader("맛집 평점 그래프")
+
+fig, ax = plt.subplots()
+ax.bar(df['맛집'], df['평점'], color='g')
+ax.plot(df['맛집'], df['평점'], c='c', marker='o', mfc='w', mew=2, linewidth=2, linestyle='--')
+plt.ylim(0, 5.5)
+plt.ylabel('평점')
+plt.title('맛집별 평점 비교')
+
+st.pyplot(fig)
+
+
+
+st.write('')
+st.write('')
 st.write('')
 st.write('')
 
-st.header(':green[맺으며]')
+st.header('*:green[맺으며]*')
 st.markdown(""":green[
     제가 사랑하는 **서울의 맛집 4곳**을 소개해보았는데요,   
     날씨가 맑고 나들이 나가기 더없이 좋은 요즘, 더 북적여지기 전에 꼭 방문해보세요!]
