@@ -248,11 +248,11 @@ df = pd.DataFrame({
 
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
-import matplotlib as mpl
+
 font_path = "./fonts/NanumGothic.ttf"
 font_prop = fm.FontProperties(fname=font_path)
-mpl.rcParams['font.family'] = 'Malgun Gothic'
-mpl.rcParams['axes.unicode_minus'] = False
+plt.rcParams['font.family'] = 'Malgun Gothic'
+plt.rcParams['axes.unicode_minus'] = False
 
 st.subheader("맛집 평점 그래프")
 
