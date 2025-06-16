@@ -246,22 +246,24 @@ df = pd.DataFrame({
 })
 
 
-import matplotlib.pyplot as plt
-import matplotlib.font_manager as fm
+# 한글 폰트로 변경해서 배포하면 무슨 짓을 해도 자꾸 깨져서
+# 영어로 그래프 만들었습니다ㅠㅠ
 
-font_path = "./fonts/NanumGothic.ttf"
-font_prop = fm.FontProperties(fname=font_path)
-plt.rcParams['font.family'] = 'Malgun Gothic'
-plt.rcParams['axes.unicode_minus'] = False
+import matplotlib.pyplot as plt
 
 st.subheader("맛집 평점 그래프")
 
+df = pd.DataFrame({
+    'Best': ['tosokchon', 'Daechung park', 'Retrospector', 'simwon'],
+    'Rating': [4.5, 4.5, 5, 4.5]
+})
+
 fig, ax = plt.subplots()
-ax.bar(df['맛집'], df['평점'], color='g')
-ax.plot(df['맛집'], df['평점'], c='c', marker='o', mfc='w', mew=2, linewidth=2, linestyle='--')
+ax.bar(df['Best'], df['Rating'], color='g')
+ax.plot(df['Best'], df['Rating'], c='c', marker='o', mfc='w', mew=2, linewidth=2, linestyle='--')
 plt.ylim(0, 5.5)
-plt.ylabel('평점')
-plt.title('맛집별 평점 비교')
+plt.ylabel('Rating')
+plt.title('Rating Comparison')
 
 st.pyplot(fig)
 
